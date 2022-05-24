@@ -1,0 +1,83 @@
+/* File with all sql request for DB Orange Grill Menu Builder */
+
+/* Create User */
+Insert into users (name,email,password,access_lvl) values (1,2,3,4) returning *;
+
+/* Update User name */
+Update users set name="2" where id="id" returning *;
+
+/* Update User email */
+Update users set email="2" where id="id" returning *;
+
+/* Update User password */
+Update users set password="2" where id="id" returning *;
+
+/* Read User */
+Select * from users where id="id";
+
+/*Delete User */
+Delete from users where id="id";
+
+
+
+
+/* Create Client */
+Insert into clients (name,email,address) values(1,2,3) returning *;
+
+/* Update Client name */
+Update clients set name="2" where id="id" returning *;
+
+/* Update Client email */
+Update clients set email="3" where id="id" returning *;
+
+/* Update Client address */
+Update clients set name="1" where id="id" returning *;
+
+/* Delete Client */
+Delete from clients where id="id";
+
+
+
+/* Menu pick choices*/
+
+/* Select all items by Menu_type */
+Select * from dishes where menu_type="raw" ;
+
+/* Select  Kosher ONLY items */
+Select * from dishes where menu_type="raw" and kosher="TRUE" ;
+
+/* Select NO PORK items */
+Select * from dishes where menu_type="raw" and pork="false" ;
+
+/*Select NO NUTS items */
+Select * from dishes where menu_type="raw" and nuts="false" ;
+
+/*Select NO Shellfish items */
+Select * from dishes where menu_type="raw" and shellfish="false" ;
+
+/*Select vegan items*/
+Select * from dishes where menu_type="raw" and vegan="TRUE";
+
+/*Select vegan NO NUTS items*/
+Select * from dishes where menu_type="raw" and vegan="TRUE" and nuts="false";
+
+/*Select KOSHER NO NUTS items*/
+Select * from dishes where menu_type="raw" and kosher="TRUE" and nuts="false";
+
+/*Select NO pork Yes Shellfish items */
+Select * from dishes where menu_type="raw" and pork="false" and shellfish="true";
+
+/*Select Yes pork NO Shellfish items */
+Select * from dishes where menu_type="raw" and pork="true" and shellfish="false";
+
+/*Select NO pork Yes Shellfish NO Nuts items */
+Select * from dishes where menu_type="raw" and pork="false" and shellfish="true" and nuts="false";
+
+/*Select Yes pork NO Shellfish NO Nuts items */
+Select * from dishes where menu_type="raw" and pork="true" and shellfish="false" and nuts="false";
+
+/*Select NO pork NO Shellfish NO Nuts items */
+Select * from dishes where menu_type="raw" and pork="false" and shellfish="false" and nuts="false";
+
+
+
