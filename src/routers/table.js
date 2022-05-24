@@ -11,16 +11,7 @@ const { authenticateToken } = require('../middleware/authorization.js')
 
 const router = new express.Router()
 
-router.post('/ct', async(req, res) => {
-    try {
-
-        const response = await createUser(req.body)
-        res.status(200).send(response)
-    } catch (e) {
-        res.status(400).send(e)
-    }
-
-})
+// Example of  future route
 router.get('/ctt', authenticateToken, async(req, res) => {
     res.status(200).send({ messgae: 'Authorized', user: req.user })
 })
