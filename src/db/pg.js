@@ -1,10 +1,9 @@
-const { Client } = require('pg')
+const { Client } = require("pg");
 
 const db = new Client({
-    connectionString: process.env.DATABASE_URL,
+  connectionString: process.env.DATABASE_URL,
+});
 
-})
+db.connect();
 
-db.connect()
-
-module.exports = db
+module.exports = db;
