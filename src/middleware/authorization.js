@@ -14,7 +14,7 @@ async function authenticateToken(req, res, next) {
         req.user = user.rows[0]
         next()
     } catch (e) {
-        res.status(401).send({ error: 'please Authorized .' + e })
+        res.status(401).send({ error: `Please Authorized . + ${e} `})
     }
 }
 
