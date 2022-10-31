@@ -8,8 +8,8 @@
 # Menu Builder Web Page [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/vladimirnem/og-menu-app/blob/master/LICENSE.md)
 
 This is my first webpage so i will try to be clear:)
-Builder will take your itemized menu and base on filters and your desires will build a  fancy-look document
-with prices per person, self-cost calculation, filters for allergies and other usefull filters in industry.
+Menu Builder will take your itemized menu from DataBase and based on filters and your desires will build a "fancy-look" document/list
+with prices per person for this Menu, made self-cost calculation, filters for allergies and other usefull filters in industry.
 
 
 
